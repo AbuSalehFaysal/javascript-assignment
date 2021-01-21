@@ -19,15 +19,15 @@ console.log("Kilometer to Meter Conversion Result: " + resultOfKilometerToMeter)
 // Budget Calculatior
 // =======================================
 function budgetCalculator(numberOfWatch, numberOfPhone, numberOfLaptop) {
-    let totalPrice;
+    let totalBudget;
     if (numberOfWatch < 0 || numberOfPhone < 0 || numberOfLaptop < 0) {
         return "Value of any gadgets cannot be negative, thus the calculation cannot be done!";
     } else {
         let priceOfWatch = 50 * numberOfWatch;
         let priceOfPhone = 100 * numberOfPhone;
         let priceOfLaptop = 500 * numberOfLaptop;
-        totalPrice = priceOfWatch + priceOfPhone + priceOfLaptop;
-        return totalPrice;
+        totalBudget = priceOfWatch + priceOfPhone + priceOfLaptop;
+        return totalBudget;
     }
 }
 let resultOfBudgetCalculator = budgetCalculator(4, 2, 2);
@@ -60,7 +60,7 @@ function hotelCost(numberOfDays) {
         return hotelPrice;
     }
 }
-let resultOfHotelCost = hotelCost(15);
+let resultOfHotelCost = hotelCost(21);
 console.log("Hotel bill for your staying: " + resultOfHotelCost);
 
 // =======================================
@@ -70,15 +70,15 @@ function megaFriend(arrayOfNames) {
     if (arrayOfNames.length === 0) {
         return "Array of Names is empty!";
     } else {
-        let stringLength = 0;
-        let longest;
+        let nameLength = 0;
+        let megaFriendName;
         for (let i = 0; i < arrayOfNames.length; i++) {
-            if (arrayOfNames[i].length > stringLength) {
-                stringLength = arrayOfNames[i].length;
-                longest = arrayOfNames[i];
+            if (arrayOfNames[i].length > nameLength) {
+                nameLength = arrayOfNames[i].length;
+                megaFriendName = arrayOfNames[i];
             }
         }
-        return longest;
+        return megaFriendName;
     }
 }
 let resultOfMegaFriend = megaFriend(["Abu", "Saleh", "Faysal"]);
