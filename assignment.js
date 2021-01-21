@@ -82,4 +82,4 @@ function megaFriend(arrayOfNames) {
     }
 }
 let resultOfMegaFriend = megaFriend(["Abu", "Saleh", "Faysal"]);
-console.log("My mega friend is: "+resultOfMegaFriend);
+console.log("My mega friend is: " + resultOfMegaFriend);
