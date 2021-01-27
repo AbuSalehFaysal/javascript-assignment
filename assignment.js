@@ -16,7 +16,7 @@ let resultOfKilometerToMeter = kilometerToMeter(10);
 console.log("Kilometer to Meter Conversion Result: " + resultOfKilometerToMeter);
 
 // =======================================
-// Budget Calculatior
+// Budget Calculator
 // =======================================
 function budgetCalculator(numberOfWatch, numberOfPhone, numberOfLaptop) {
     let totalBudget;
